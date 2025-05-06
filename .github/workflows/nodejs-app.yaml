@@ -14,3 +14,13 @@ jobs:
             run: |
                     npm install --save-dev jest supertest
                     npm test
+        -   name: Build
+            run: npm install
+        -   name: Run the app, Check And kill
+            run: |
+                    node app.js &
+                    APP_PID=$!
+                    sleep 10
+                    curl http://localhost:3000
+                    kill $APP_PID
+                
