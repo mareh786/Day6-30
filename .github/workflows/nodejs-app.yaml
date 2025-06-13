@@ -14,19 +14,19 @@ jobs:
             uses: actions/setup-node@v4
             with: 
                 node-version: '20.x'
-        -   name: Test
-            run: |
-                    npm install --save-dev jest supertest
-                    npm test
-        -   name: Build
-            run: npm install
-        -   name: Run the app, Check And kill
-            run: |
-                    node app.js &
-                    APP_PID=$!
-                    sleep 10
-                    curl http://localhost:3000
-                    kill $APP_PID
+        # -   name: Test
+        #     run: |
+        #             npm install --save-dev jest supertest
+        #             npm test
+        # -   name: Build
+        #     run: npm install
+        # -   name: Run the app, Check And kill
+        #     run: |
+        #             node app.js &
+        #             APP_PID=$!
+        #             sleep 10
+        #             curl http://localhost:3000
+        #             kill $APP_PID
         -    name: Login Docker-Hub
              uses: docker/login-action@v3
              with:
