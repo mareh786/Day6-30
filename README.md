@@ -5,7 +5,7 @@ A simple multi-page Node.js application built using Express and EJS that greets 
 ## 📸 Preview
 
 - Page 1: User enters their name
-- Page 2: The app greets with "Hi, Welcome [Name]!"
+- Page 2: The app greets with "Hi, Welcome [Mohammed Adil Rehan]!"
 
 ## 💻 Tech Stack
 
