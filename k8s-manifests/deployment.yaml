@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: node-greet-app
-        image: mareh786/test-app:latest
+        image: mareh786/test-app:v21
         ports:
         - containerPort: 3000
 
